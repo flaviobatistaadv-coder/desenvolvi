@@ -1,0 +1,455 @@
+{
+  "interval_seconds": 10800,
+  "description": "Monitoramento de fontes públicas, multitemático e multilíngue. Configurável; não representa cobertura integral da internet.",
+  "sources": [
+    {
+      "id": "google-pt",
+      "name": "Google News — Brasil / português",
+      "url": "https://news.google.com/rss/search?q=%22Arautos%20do%20Evangelho%22%20when%3A90d&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
+      "kind": "imprensa",
+      "language": "Brasil / português",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "google-en",
+      "name": "Google News — EUA / inglês",
+      "url": "https://news.google.com/rss/search?q=%22Heralds%20of%20the%20Gospel%22%20when%3A90d&hl=en-US&gl=US&ceid=US%3Aen",
+      "kind": "imprensa",
+      "language": "EUA / inglês",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "google-es",
+      "name": "Google News — Espanha / espanhol",
+      "url": "https://news.google.com/rss/search?q=%22Heraldos%20del%20Evangelio%22%20when%3A90d&hl=es&gl=ES&ceid=ES%3Aes",
+      "kind": "imprensa",
+      "language": "Espanha / espanhol",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "google-fr",
+      "name": "Google News — França / francês",
+      "url": "https://news.google.com/rss/search?q=(%22H%C3%A9rauts%20de%20l%E2%80%99%C3%89vangile%22%20OR%20%22H%C3%A9rauts%20de%20l'Evangile%22)%20when%3A90d&hl=fr&gl=FR&ceid=FR%3Afr",
+      "kind": "imprensa",
+      "language": "França / francês",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "google-it",
+      "name": "Google News — Itália / italiano",
+      "url": "https://news.google.com/rss/search?q=%22Araldi%20del%20Vangelo%22%20when%3A90d&hl=it&gl=IT&ceid=IT%3Ait",
+      "kind": "imprensa",
+      "language": "Itália / italiano",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "google-de",
+      "name": "Google News — Alemanha / alemão",
+      "url": "https://news.google.com/rss/search?q=%22Herolde%20des%20Evangeliums%22%20when%3A90d&hl=de&gl=DE&ceid=DE%3Ade",
+      "kind": "imprensa",
+      "language": "Alemanha / alemão",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "bing-pt",
+      "name": "Bing News — português",
+      "url": "https://www.bing.com/news/search?q=%22Arautos%20do%20Evangelho%22&format=rss",
+      "kind": "imprensa",
+      "language": "Brasil / português",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "revista-oficial",
+      "name": "Revista oficial — seção Arautos no Mundo",
+      "url": "https://revista.arautos.org/category/arautos-no-mundo/feed/",
+      "kind": "institucional",
+      "language": "Brasil / português"
+    },
+    {
+      "id": "vatican-pt",
+      "name": "Vatican News — português",
+      "url": "https://www.vaticannews.va/pt.rss.xml",
+      "kind": "autoridade",
+      "language": "português",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "vatican-en",
+      "name": "Vatican News — inglês",
+      "url": "https://www.vaticannews.va/en.rss.xml",
+      "kind": "autoridade",
+      "language": "inglês",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "vatican-es",
+      "name": "Vatican News — espanhol",
+      "url": "https://www.vaticannews.va/es.rss.xml",
+      "kind": "autoridade",
+      "language": "espanhol",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "google-juridico",
+      "name": "Google News — jurídico e governança",
+      "url": "https://news.google.com/rss/search?q=(%22Arautos%20do%20Evangelho%22%20OR%20%22Heralds%20of%20the%20Gospel%22%20OR%20%22Heraldos%20del%20Evangelio%22)%20(justi%C3%A7a%20OR%20tribunal%20OR%20court%20OR%20investiga%C3%A7%C3%A3o%20OR%20Vaticano%20OR%20financial%20OR%20patrim%C3%B4nio)%20when%3A90d&hl=pt-BR&gl=BR&ceid=BR%3Apt-419",
+      "kind": "imprensa",
+      "language": "Brasil / português",
+      "match_terms": [
+        "Arautos do Evangelho",
+        "Heralds of the Gospel",
+        "Heraldos del Evangelio",
+        "Hérauts de l’Évangile",
+        "Hérauts de l'Evangile",
+        "Araldi del Vangelo",
+        "Herolde des Evangeliums",
+        "Virgo Flos Carmeli",
+        "Regina Virginum",
+        "João Scognamiglio Clá Dias"
+      ]
+    },
+    {
+      "id": "noticias-oficiais",
+      "name": "Site oficial — Arautos no Mundo",
+      "url": "https://www.arautos.org/artigos/noticias",
+      "format": "official_news_html",
+      "kind": "institucional",
+      "language": "Brasil / português"
+    },
+    {
+      "id": "social-tiktok-pt",
+      "name": "Busca pública tiktok — português",
+      "url": "https://html.duckduckgo.com/html/?q=%22exorcismo%22+%22Arautos%22+site%3Atiktok.com",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "tiktok",
+      "kind": "rede social (resultado indexado)",
+      "language": "português",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    },
+    {
+      "id": "social-tiktok-es",
+      "name": "Busca pública tiktok — espanhol",
+      "url": "https://html.duckduckgo.com/html/?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+site%3Atiktok.com",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "tiktok",
+      "kind": "rede social (resultado indexado)",
+      "language": "espanhol",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    },
+    {
+      "id": "social-tiktok-en",
+      "name": "Busca pública tiktok — inglês",
+      "url": "https://html.duckduckgo.com/html/?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+site%3Atiktok.com",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "tiktok",
+      "kind": "rede social (resultado indexado)",
+      "language": "inglês",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    },
+    {
+      "id": "social-x-pt",
+      "name": "Busca pública x — português",
+      "url": "https://html.duckduckgo.com/html/?q=%22exorcismo%22+%22Arautos%22+%28site%3Ax.com+OR+site%3Atwitter.com%29",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "x",
+      "kind": "rede social (resultado indexado)",
+      "language": "português",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    },
+    {
+      "id": "social-x-es",
+      "name": "Busca pública x — espanhol",
+      "url": "https://html.duckduckgo.com/html/?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+%28site%3Ax.com+OR+site%3Atwitter.com%29",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "x",
+      "kind": "rede social (resultado indexado)",
+      "language": "espanhol",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    },
+    {
+      "id": "social-x-en",
+      "name": "Busca pública x — inglês",
+      "url": "https://html.duckduckgo.com/html/?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+%28site%3Ax.com+OR+site%3Atwitter.com%29",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "x",
+      "kind": "rede social (resultado indexado)",
+      "language": "inglês",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    },
+    {
+      "id": "social-vimeo-pt",
+      "name": "Busca pública vimeo — português",
+      "url": "https://html.duckduckgo.com/html/?q=%22exorcismo%22+%22Arautos%22+site%3Avimeo.com",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "vimeo",
+      "kind": "rede social (resultado indexado)",
+      "language": "português",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    },
+    {
+      "id": "social-vimeo-es",
+      "name": "Busca pública vimeo — espanhol",
+      "url": "https://html.duckduckgo.com/html/?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+site%3Avimeo.com",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "vimeo",
+      "kind": "rede social (resultado indexado)",
+      "language": "espanhol",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    },
+    {
+      "id": "social-vimeo-en",
+      "name": "Busca pública vimeo — inglês",
+      "url": "https://html.duckduckgo.com/html/?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+site%3Avimeo.com",
+      "format": "web_search_html",
+      "search_engine": "duckduckgo",
+      "platform": "vimeo",
+      "kind": "rede social (resultado indexado)",
+      "language": "inglês",
+      "match_terms": [
+        "Arautos",
+        "Arautos do Evangelho",
+        "João Clá",
+        "Joao Cla",
+        "Juan Cla",
+        "Heraldos del Evangelio",
+        "Heralds of the Gospel",
+        "Araldi del Vangelo",
+        "Hérauts de l’Évangile"
+      ],
+      "topic_terms": [
+        "exorc",
+        "esorc"
+      ]
+    }
+  ]
+}

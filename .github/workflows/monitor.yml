@@ -1,0 +1,87 @@
+name: Monitor Arautos a cada 3 horas
+
+on:
+  schedule:
+    # UTC: em São Paulo, 00:17, 03:17, 06:17, 09:17, 12:17, 15:17, 18:17 e 21:17.
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/monitor.yml'
+      - 'monitor.py'
+      - 'public_search.py'
+      - 'sources.json'
+      - 'tests/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: arautos-monitor-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  pesquisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Obter código
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Preparar Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Testar coletores e cadência
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Restaurar histórico
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: .monitor/state.sqlite3
+          key: ${{ runner.os }}-arautos-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            ${{ runner.os }}-arautos-state-v1-
+
+      - name: Pesquisar notícias e índices das redes
+        run: python3 monitor.py --once
+
+      - name: Registrar situação da coleta
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = Path('.monitor/reports/latest.json')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
+              if not report.exists():
+                  summary.write('Não houve relatório nesta execução. Consulte o erro nos logs.\n')
+              else:
+                  data = json.loads(report.read_text(encoding='utf-8'))
+                  summary.write('# Monitor Arautos — resultado\n\n')
+                  summary.write(f"Coleta: {data['collected_at_local']}\n\n")
+                  summary.write(f"Estado: **{data['status']}**; novos: {data['new_count']}; histórico: {data['total_count']}.\n\n")
+                  summary.write('Baixe o artefato desta execução para consultar o painel, os links e os erros por fonte.\n\n')
+                  summary.write('Os textos são atribuídos às fontes; indexação não confirma reprodução ou autenticidade.\n')
+          PY
+
+      - name: Preservar histórico inclusive em coleta parcial
+        if: ${{ always() && hashFiles('.monitor/state.sqlite3') != '' }}
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: .monitor/state.sqlite3
+          key: ${{ runner.os }}-arautos-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Disponibilizar relatórios e cópia do histórico
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: monitor-relatorios-${{ github.run_id }}
+          path: |
+            .monitor/reports/
+            .monitor/state.sqlite3
+          include-hidden-files: true
+          retention-days: 90
+          if-no-files-found: warn
