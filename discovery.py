@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 import fcntl
 import hashlib
 import html
+from html.parser import HTMLParser
 import json
 import math
 from pathlib import Path
@@ -25,6 +26,7 @@ from public_search import SearchPage, fold, unwrap
 ROOT = Path(__file__).resolve().parent
 MAX_BYTES = 4 * 1024 * 1024
 ENGINES = {
+    "brave": "https://search.brave.com/search",
     "duckduckgo": "https://html.duckduckgo.com/html/",
     "bing": "https://www.bing.com/search",
     "google_news_rss": "https://news.google.com/rss/search",
@@ -105,7 +107,7 @@ def candidate_url(value: str) -> str | None:
         return None
     host = parsed.hostname or ""
     search_hosts = {"www.google.com", "google.com", "www.bing.com", "bing.com", "duckduckgo.com", "html.duckduckgo.com"}
-    if host in search_hosts:
+    if host in search_hosts or host == "brave.com" or host.endswith(".brave.com"):
         return None
     generic = {
         "www.youtube.com": ("/results", "/feed/"),
@@ -121,6 +123,60 @@ def candidate_url(value: str) -> str | None:
     return url
 
 
+class BravePage(HTMLParser):
+    """Extrai âncoras externas sem depender de classes CSS não verificadas."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.results = []
+        self.visible = []
+        self.hidden = 0
+        self.current = None
+        self.heading = False
+        self.by_url = {}
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag in {"script", "style"}:
+            self.hidden += 1
+        if tag == "a":
+            url = candidate_url(attrs.get("href", ""))
+            self.current = {"url": url, "text": [], "headings": []} if url else None
+            self.heading = False
+        elif self.current is not None and tag in {"h2", "h3", "h4"}:
+            self.heading = True
+
+    def handle_data(self, text):
+        if self.hidden:
+            return
+        self.visible.append(text)
+        if self.current is not None:
+            self.current["text"].append(text)
+            if self.heading:
+                self.current["headings"].append(text)
+
+    def handle_endtag(self, tag):
+        if tag in {"script", "style"} and self.hidden:
+            self.hidden -= 1
+        if tag in {"h2", "h3", "h4"}:
+            self.heading = False
+        if tag != "a" or self.current is None:
+            return
+        heading = " ".join(" ".join(self.current["headings"]).split())
+        fallback = " ".join(" ".join(self.current["text"]).split())
+        title = heading or fallback
+        url = self.current["url"]
+        if title:
+            quality = (bool(heading), len(title))
+            previous = self.by_url.get(url)
+            if previous is None:
+                record = {"url": url, "title": title, "snippet": "", "quality": quality}
+                self.results.append(record)
+                self.by_url[url] = record
+            elif quality > previous["quality"]:
+                previous.update(title=title, quality=quality)
+        self.current = None
+
+
 def parse_candidates(data: bytes, query: dict, aliases: list[str], topic_terms: list[str]) -> tuple[list[dict], int]:
     if query["engine"] in RSS_ENGINES:
         feed = parse_feed(data, {"id": query["id"], "name": query["engine"], "url": query_url(query), "language": query["language"], "kind": "índice de notícias"})
@@ -128,7 +184,7 @@ def parse_candidates(data: bytes, query: dict, aliases: list[str], topic_terms: 
         if not records:
             return [], 0
     else:
-        parser = SearchPage(query["engine"])
+        parser = BravePage() if query["engine"] == "brave" else SearchPage(query["engine"])
         raw = data.decode("utf-8", errors="replace")
         parser.feed(raw)
         visible = fold(" ".join(parser.visible))
@@ -311,7 +367,7 @@ def render_markdown(report):
     return "\n".join(lines)
 
 
-def run_round(config_path: Path, state_path: Path, output_dir: Path, max_queries=48, max_seconds=1200, spacing=4) -> dict:
+def run_round(config_path: Path, state_path: Path, output_dir: Path, max_queries=60, max_seconds=1200, spacing=4) -> dict:
     if not isinstance(max_queries, int) or isinstance(max_queries, bool) or max_queries < 1:
         raise ValueError("max_queries deve ser inteiro positivo")
     if (not isinstance(max_seconds, (int, float)) or isinstance(max_seconds, bool) or not math.isfinite(max_seconds) or max_seconds <= 0
@@ -426,7 +482,7 @@ def main(argv=None):
     parser.add_argument("--config", type=Path, default=ROOT / "discovery_queries.json")
     parser.add_argument("--state", type=Path, default=ROOT / ".monitor" / "discovery.sqlite3")
     parser.add_argument("--output-dir", type=Path, default=ROOT / ".monitor" / "reports")
-    parser.add_argument("--max-queries", type=int, default=48)
+    parser.add_argument("--max-queries", type=int, default=60)
     parser.add_argument("--max-seconds", type=float, default=1200)
     parser.add_argument("--spacing", type=float, default=4)
     args = parser.parse_args(argv)

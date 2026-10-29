@@ -58,7 +58,7 @@ jobs:
 
       - name: Descoberta mundial incremental com espaçamento
         if: ${{ !cancelled() && steps.checks.outcome == 'success' }}
-        run: python3 discovery.py --once --max-queries 48 --max-seconds 1200 --spacing 4
+        run: python3 discovery.py --once --max-queries 60 --max-seconds 1200 --spacing 4
 
       - name: Extrair links de catálogos públicos
         if: ${{ !cancelled() && steps.checks.outcome == 'success' }}

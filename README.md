@@ -24,6 +24,8 @@ Uma máquina ou sessão Codex pode ser encerrada. Publicar o ambiente salva seu 
 
 ## Consultar resultados
 
+O [inventário consolidado de 29/10/2026](docs/inventario-geral-2026-10-29.md) reúne os links localizados, inclusive os ainda não conferidos. Também está disponível como [planilha CSV](docs/inventario-geral-2026-10-29.csv) e [HTML com filtros](docs/inventario-geral-2026-10-29.html). É um retrato da pesquisa, com o índice automático em anexo; os próximos resultados ficam nos artefatos do GitHub Actions.
+
 Após a coleta, os arquivos ficam em `.monitor/reports/`:
 
 - `painel.html`: painel independente, com pesquisa e filtros por tema, edição e origem. Pode ser aberto como arquivo HTML; não precisa de servidor.
@@ -110,18 +112,18 @@ O modo local `--watch` usa cadência fixa de 10.800 segundos sem somar a duraç�
 
 ## Descoberta mundial incremental
 
-`discovery_queries.json` contém **336 entradas de consulta**: doze idiomas, sete escopos e quatro provedores. Idiomas iniciais: português, inglês, espanhol, francês, italiano, alemão, polonês, russo, árabe, japonês, chinês e neerlandês. São uma seleção inicial; não representam todos os idiomas existentes.
+`discovery_queries.json` contém **420 entradas de consulta**: doze idiomas, sete escopos e cinco provedores. Idiomas iniciais: português, inglês, espanhol, francês, italiano, alemão, polonês, russo, árabe, japonês, chinês e neerlandês. São uma seleção inicial; não representam todos os idiomas existentes.
 
 Os escopos incluem web aberta, redes principais, redes e fóruns, plataformas alternativas, blogs independentes, vídeos/arquivos públicos e outros locais de hospedagem indexados. Entre os alvos estão YouTube, Facebook, Instagram, TikTok, X/Twitter, Reddit, Telegram público, OK.ru, VK, Rutube, Rumble, Odysee, Vimeo, Dailymotion, Archive.org, BitChute e PeerTube. Há também consultas textuais aos índices de locais adultos solicitados pelo usuário; nenhum vídeo é baixado ou reproduzido pelo coletor.
 
-Os provedores são DuckDuckGo HTML, Bing HTML, Google News RSS e Bing News RSS. Os dois últimos têm cobertura de notícias e não substituem um índice completo da web. Suas URLs podem apontar ao agregador em vez do vídeo original. Todos os resultados preservam provedor e consulta de origem.
+Os provedores são Brave Search HTML, DuckDuckGo HTML, Bing HTML, Google News RSS e Bing News RSS. Os dois últimos têm cobertura de notícias e não substituem um índice completo da web. Suas URLs podem apontar ao agregador em vez do vídeo original. Todos os resultados preservam provedor e consulta de origem. A consulta manual ao Brave localizou referências adicionais no Facebook e no YouTube; isso não garante disponibilidade nas próximas rodadas. O parser automatizado foi verificado com uma página de teste construída, sem presumir que todo formato real será reconhecido.
 
 ```bash
-python3 discovery.py --once --max-queries 48 --max-seconds 1200 --spacing 4
+python3 discovery.py --once --max-queries 60 --max-seconds 1200 --spacing 4
 python3 catalogue.py --once --spacing 4
 ```
 
-Cada rodada percorre até 48 entradas, com intervalo mínimo de quatro segundos entre pedidos ao mesmo host e até vinte minutos de orçamento para a descoberta. O cursor é salvo em `.monitor/discovery.sqlite3`, e a próxima execução continua a fila. Uma rotação da matriz tem sete lotes nominais; consultas puladas por bloqueio são identificadas como não executadas. Percorrer a fila não comprova que todos os alvos foram pesquisados com sucesso.
+Cada rodada percorre até 60 entradas, com intervalo mínimo de quatro segundos entre pedidos ao mesmo host e até vinte minutos de orçamento para a descoberta. O cursor é salvo em `.monitor/discovery.sqlite3`, e a próxima execução continua a fila. Uma rotação da matriz tem sete lotes nominais; consultas puladas por bloqueio são identificadas como não executadas. Ao alterar a matriz, o cursor recomeça na primeira entrada e os links e registros de consultas anteriores permanecem no banco. Percorrer a fila não comprova que todos os alvos foram pesquisados com sucesso.
 
 Desafios, recusas ou limites suspendem o provedor afetado naquela rodada. Duas respostas HTML consecutivas sem formato ou relevância utilizáveis também pausam esse provedor. Outros índices seguem sendo consultados. Mais tempo não elimina esses impedimentos; os relatórios conservam as razões.
 

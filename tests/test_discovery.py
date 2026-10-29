@@ -6,6 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 from urllib.parse import parse_qs, urlencode, urlsplit
+from urllib.error import HTTPError
 
 import discovery
 
@@ -63,6 +64,21 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(report["status"], "partial")
         self.assertEqual(report["executed_queries"], 3)
         self.assertEqual(report["cursor_next"], 0)
+
+    def test_matrix_change_restarts_cursor_and_preserves_discoveries_and_runs(self):
+        self.configure(["duckduckgo"] * 4)
+        with patch.object(discovery, "fetch_query", return_value=result()):
+            first = self.run_round(2)
+        self.assertEqual(first["cursor_next"], 2)
+        self.configure(["brave", "duckduckgo", "google_news_rss"])
+        with patch.object(discovery, "fetch_query", return_value=EMPTY) as fetch:
+            changed = self.run_round(1)
+        self.assertEqual(fetch.call_args.args[0]["engine"], "brave")
+        self.assertEqual((changed["cursor_before"], changed["cursor_next"]), (0, 1))
+        self.assertEqual((changed["new_count"], changed["total_count"]), (0, 1))
+        self.assertEqual(len(changed["items"][0]["provenance"]), 2)
+        with discovery.database(self.state) as db:
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM query_runs").fetchone()[0], 3)
 
     def test_time_budget_preserves_cursor_before_unattempted_query(self):
         self.configure(["duckduckgo", "duckduckgo"])
@@ -211,6 +227,54 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(report["status"], "partial")
         self.assertIn("inconclusivas", report["blocked_providers"]["bing"])
         self.assertEqual(report["queries"][3]["status"], "skipped")
+
+    def test_brave_fixture_prefers_heading_and_ignores_internal_or_empty_links(self):
+        config = self.configure(["brave"])
+        page = b'''<html><body>
+          <a href="https://search.brave.com/search?q=Arautos+exorcismo">Arautos exorcismo search</a>
+          <a href="https://brave.com/about/">Arautos exorcismo footer</a>
+          <a href="https://www.brave.com/help/">Arautos exorcismo help</a>
+          <a href="https://publisher.example/video/1?utm_source=brave">publisher.example</a>
+          <a href="https://publisher.example/video/1"><h3>Arautos do Evangelho: <b>exorcismo</b></h3><span>Read article</span></a>
+          <a href="https://publisher.example/empty"><img src="icon.png"></a>
+          <a href="https://independent.example/post">Jo\xc3\xa3o Cl\xc3\xa1 Dias: entrevista</a>
+        </body></html>'''
+        items, _ = discovery.parse_candidates(page, config["queries"][0], config["aliases"], config["topic_terms"])
+        self.assertEqual(len(items), 2)
+        self.assertEqual(items[0]["url"], "https://publisher.example/video/1")
+        self.assertEqual(items[0]["title"], "Arautos do Evangelho: exorcismo")
+        self.assertNotIn("Read article", items[0]["title"])
+        self.assertEqual(items[0]["verification"], "indexado")
+        self.assertEqual(items[1]["verification"], "pista")
+        self.assertTrue(all("brave.com" not in item["url"] for item in items))
+
+    def test_brave_internal_links_only_are_inconclusive_not_a_valid_empty_search(self):
+        config = self.configure(["brave"])
+        page = b'<html><a href="https://search.brave.com/search?q=Arautos">Arautos</a><a href="https://brave.com/">About Brave</a></html>'
+        with self.assertRaises(discovery.UnusableSearch):
+            discovery.parse_candidates(page, config["queries"][0], config["aliases"], config["topic_terms"])
+
+    def test_brave_http_429_stops_further_requests_to_that_provider(self):
+        self.configure(["brave", "google_news_rss", "brave"])
+        class Response:
+            status = 200
+            url = "https://news.google.com/rss/search"
+            def __enter__(self):
+                return self
+            def __exit__(self, *args):
+                return None
+            def read(self, size):
+                return b'<rss version="2.0"><channel /></rss>'
+        def open_request(request, timeout=20):
+            if urlsplit(request.full_url).hostname == "search.brave.com":
+                raise HTTPError(request.full_url, 429, "Too Many Requests", None, None)
+            return Response()
+        with patch.object(discovery, "urlopen", side_effect=open_request) as mocked:
+            report = self.run_round(3)
+        self.assertEqual(mocked.call_count, 2)
+        self.assertEqual(report["status"], "partial")
+        self.assertEqual([entry["status"] for entry in report["queries"]], ["blocked", "ok", "skipped"])
+        self.assertIn("HTTP 429", report["blocked_providers"]["brave"])
 
 
 if __name__ == "__main__":
