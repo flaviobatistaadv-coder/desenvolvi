@@ -55,7 +55,7 @@ Os temas são atribuídos por palavras-chave e podem ter falsos positivos. Uma p
 - Revista oficial: RSS da seção **Arautos no Mundo**, com as últimas edições disponíveis.
 - Site oficial: notícias individuais da listagem `https://www.arautos.org/artigos/noticias`.
 - Vatican News: RSS em português, inglês e espanhol, filtrado por menções aos nomes da organização e entidades relacionadas.
-- TikTok, X/Twitter e Vimeo: buscas no índice público do DuckDuckGo em português, espanhol e inglês. Só entram URLs específicas de vídeos/posts com correspondência simultânea ao nome e ao tema. A indexação não confirma reprodução nem autoria. Resposta 202, CAPTCHA ou interface não reconhecida gera erro explícito; não é tratada como ausência de vídeos.
+- TikTok, X/Twitter e Vimeo: buscas no índice público do Bing em português, espanhol e inglês. O adaptador do DuckDuckGo permanece disponível para configuração manual, mas não é usado pelas fontes padrão por retornar HTTP 202 nas execuções do GitHub Actions. Só entram URLs específicas de vídeos/posts com correspondência simultânea ao nome e ao tema. A indexação não confirma reprodução nem autoria. Resposta 202, CAPTCHA ou interface não reconhecida gera erro explícito; não é tratada como ausência de vídeos.
 
 Uma consulta pode funcionar e retornar zero itens. A pesquisa textual filtra títulos e trechos disponíveis nos feeds; uma referência presente apenas no corpo de um artigo pode não ser incluída. A edição de busca não garante o idioma de cada texto. Os termos e as fontes podem ser ampliados no arquivo de configuração; esta seleção não representa todos os idiomas ou todas as páginas da internet.
 
