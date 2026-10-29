@@ -146,7 +146,7 @@ def parse_search(data: bytes, source: dict) -> list[dict]:
                        "source_id": source["id"], "kind": "rede social (resultado indexado)",
                        "categories": ["Comunicação e cultura"]})
     if not platform_candidates:
-        raise ValueError("O buscador retornou apenas URLs sem relação com a plataforma solicitada")
+        raise ValueError("O buscador retornou apenas URLs sem relação com a plataforma solicitada; amostra=" + repr([(record["title"][:100], unwrap(record["url"])[:180]) for record in parser.results[:2]]) + "; página=" + repr(" ".join(parser.visible)[:700]))
     if not result:
         raise ValueError("O buscador retornou resultados sem correspondência conjunta à organização e ao tema")
     return result
