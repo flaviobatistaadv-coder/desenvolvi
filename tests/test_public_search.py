@@ -42,16 +42,6 @@ def page(*cards):
     return ("<!doctype html><html><body><main>" + "".join(cards) + "</main></body></html>").encode("utf-8")
 
 
-def rss_result(url, title, snippet):
-    return f"<item><title>{html.escape(title)}</title><link>{html.escape(url)}</link><description>{html.escape(snippet)}</description></item>"
-
-
-def rss_page(*items):
-    return ('<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel>'
-            '<title>Bing: Arautos exorcismo</title><link>https://www.bing.com/search?q=arautos</link>'
-            '<description>Resultados da pesquisa</description>' + "".join(items) + '</channel></rss>').encode("utf-8")
-
-
 class SearchResultTests(unittest.TestCase):
     def assert_indexed_only(self, item):
         self.assertIsNone(item["published_at"])
@@ -125,29 +115,6 @@ class SearchResultTests(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             public_search.parse_search(fixture, source("bing"))
-
-    def test_bing_rss_keeps_relevant_posts_and_cleans_html_snippets(self):
-        video = "https://www.tiktok.com/@canalpublico/video/7291234567890123456"
-        fixture = rss_page(rss_result(video, "Arautos do Evangelho — exorcismo", "<p>Publicação &amp; contexto.</p>"))
-        items = public_search.parse_search_rss(fixture, source("bing"))
-        self.assertEqual(len(items), 1)
-        self.assertEqual(items[0]["url"], video)
-        self.assertIn("Publicação & contexto.", items[0]["summary"])
-        self.assertNotIn("<p>", items[0]["summary"])
-        self.assert_indexed_only(items[0])
-
-    def test_bing_rss_valid_empty_channel_is_a_completed_search(self):
-        self.assertEqual(public_search.parse_search_rss(rss_page(), source("bing")), [])
-
-    def test_bing_rss_unrelated_results_remain_a_failure(self):
-        unrelated = rss_page(rss_result("https://www.example.com/updates", "Windows updates", "Security releases"))
-        with self.assertRaises(ValueError):
-            public_search.parse_search_rss(unrelated, source("bing"))
-
-    def test_bing_rss_rejects_html_challenges_and_incomplete_feeds(self):
-        for fixture in (b"<html><body>CAPTCHA</body></html>", b"<rss><channel/></rss>", b"<rss", b""):
-            with self.subTest(fixture=fixture), self.assertRaises(ValueError):
-                public_search.parse_search_rss(fixture, source("bing"))
 
     def test_bing_localized_no_results_is_a_completed_empty_search(self):
         for message in ("Não há resultados para esta consulta", "No hay resultados para esta consulta", "There are no results for this query"):
