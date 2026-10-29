@@ -1,6 +1,6 @@
 # Monitor Arautos do Evangelho — visão 360
 
-Agente de coleta de publicações públicas sobre a organização. Pesquisa nomes em português, inglês, espanhol, francês, italiano e alemão, acompanha fontes institucionais e produz um painel local com histórico, filtros e links. Não requer chave de API nem pacote externo.
+Agente de coleta de publicações públicas e descoberta de vídeos e referências sobre a organização. Acompanha notícias, canais institucionais, índices públicos e páginas que citam mídia. A pesquisa ampliada começa com doze idiomas e mantém histórico, proveniência e links para conferência. Não requer chave de API nem pacote externo.
 
 ## Executar
 
@@ -12,7 +12,7 @@ python3 -m unittest discover -s tests -v
 python3 monitor.py --once
 ```
 
-Para consultar a cada três horas, mantendo o processo em execução:
+Para o modo local de notícias a cada três horas, mantendo o processo em execução:
 
 ```bash
 python3 -u monitor.py --watch
@@ -30,6 +30,8 @@ Após a coleta, os arquivos ficam em `.monitor/reports/`:
 - `latest.md`: situação das fontes, novidades e índice de todo o histórico.
 - `latest.json`: dados estruturados, inclusive fontes, datas e marcadores de novidades.
 - `history/`: relatório Markdown de cada execução.
+- `discovery-latest.md` e `discovery-latest.json`: resultados indexados e pistas da pesquisa mundial, com consultas, bloqueios e posição da fila.
+- `catalogue-latest.md` e `catalogue-latest.json`: links audiovisuais extraídos de páginas públicas, incluindo arquivos diretos, incorporações e referências a conferir.
 
 O banco `.monitor/state.sqlite3` mantém itens, fontes que os encontraram e histórico das execuções. Preserve `.monitor/` para manter a deduplicação e o acervo; essa pasta é ignorada pelo Git. Os relatórios são retratos da última coleta: recarregar o HTML não consulta a internet.
 
@@ -48,14 +50,15 @@ Os temas são atribuídos por palavras-chave e podem ter falsos positivos. Uma p
 
 ## Fontes e alcance
 
-`sources.json` define 13 consultas de notícias e canais institucionais, além de 9 buscas sociais:
+`sources.json` define 13 consultas de notícias e canais institucionais:
 
 - Google News: seis edições de idioma, com nomes locais da organização e uma janela de busca de 90 dias; uma consulta adicional de assuntos jurídicos e de governança.
 - Bing News: busca pelo nome em português; o retorno pode incluir publicações antigas, independentemente da janela usada no Google.
 - Revista oficial: RSS da seção **Arautos no Mundo**, com as últimas edições disponíveis.
 - Site oficial: notícias individuais da listagem `https://www.arautos.org/artigos/noticias`.
 - Vatican News: RSS em português, inglês e espanhol, filtrado por menções aos nomes da organização e entidades relacionadas.
-- TikTok, X/Twitter e Vimeo: buscas no índice público do DuckDuckGo em português, espanhol e inglês. Só entram URLs específicas de vídeos/posts com correspondência simultânea ao nome e ao tema. A indexação não confirma reprodução nem autoria. Resposta 202, CAPTCHA ou interface não reconhecida gera erro explícito; não é tratada como ausência de vídeos.
+
+As buscas sociais antes concentradas em nove consultas foram incorporadas à fila mundial descrita abaixo. TikTok, X/Twitter e Vimeo continuam nos escopos dessa fila, junto com outras plataformas.
 
 Uma consulta pode funcionar e retornar zero itens. A pesquisa textual filtra títulos e trechos disponíveis nos feeds; uma referência presente apenas no corpo de um artigo pode não ser incluída. A edição de busca não garante o idioma de cada texto. Os termos e as fontes podem ser ampliados no arquivo de configuração; esta seleção não representa todos os idiomas ou todas as páginas da internet.
 
@@ -65,7 +68,7 @@ A deduplicação usa a URL normalizada, remove rastreamento conhecido e resolve 
 
 ## Ajustar o monitor
 
-Edite `sources.json` para mudar `interval_seconds` (mínimo de 60 segundos), os termos de busca, as edições ou as fontes RSS/Atom. Exemplos de execução com caminhos separados:
+Edite `sources.json` para mudar `interval_seconds` (mínimo de 60 segundos), os termos de notícias, as edições ou as fontes RSS/Atom. Exemplos de execução com caminhos separados:
 
 ```bash
 python3 monitor.py --once --config sources.json --state .monitor/state.sqlite3 --output-dir .monitor/reports
@@ -87,7 +90,7 @@ python3 -m unittest discover -s tests -v
 python3 monitor.py --once
 ```
 
-Os testes locais verificam RSS/Atom, relevância, deduplicação persistente, falhas de fontes, segurança dos dados no painel e o adaptador HTML oficial. A coleta real depende da rede e deve ser verificada separadamente.
+Os testes locais verificam RSS/Atom, relevância, deduplicação persistente, falhas de fontes, segurança dos dados no painel, fila de consultas, orçamento de tempo, bloqueios e extração de catálogos. A coleta real depende da rede e deve ser verificada separadamente.
 
 O código foi criado neste checkout. Não há necessidade de worktree: cada tarefa na nuvem já possui um ambiente isolado. As instruções de inicialização salvas nas configurações do ambiente explicam como verificar e reiniciar o processo após restaurar a máquina. Não é necessário instalar dependências com `pip` ou `npm`.
 
@@ -97,10 +100,33 @@ O fluxo `.github/workflows/monitor.yml` usa GitHub Actions para executar uma rod
 
 Após publicar o fluxo na branch padrão e confirmar que Actions está habilitado, o GitHub inicia as execuções mesmo com o computador e a conversa fechados. Manter uma aba aberta não mantém este ambiente Codex ativo. O cron do GitHub pode atrasar ou perder uma execução em períodos de carga; não fornece garantia de horário exato.
 
-Cada rodada executa os testes e a coleta. Baixe o artefato **monitor-relatorios-…** na página da execução: contém painel HTML, relatórios JSON/Markdown e cópia do banco. Os artefatos são retidos por até 90 dias, sujeitos às configurações do repositório. Não há envio automático de mensagens ou e-mails pelo agente.
+Cada rodada executa os testes, a coleta de notícias, um lote da descoberta mundial e a extração de catálogos. Baixe o artefato **monitor-relatorios-…** na página da execução: contém painel HTML, relatórios JSON/Markdown e cópias dos três bancos. Os artefatos são retidos por até 90 dias, sujeitos às configurações do repositório. Não há envio automático de mensagens ou e-mails pelo agente.
 
-O banco é reutilizado por cache entre execuções e também incluído no artefato. O cache pode ser removido pelo GitHub; nesse caso o acervo pode ser reconstruído, e itens antigos serão considerados novos. Execuções parciais mantêm seu código de saída e aparecem como falha no GitHub, mas os relatórios e o estado são preservados e a próxima rodada continua programada. Consulte os erros por fonte em `latest.json`; um fluxo que executou não significa que as redes responderam.
+Os bancos são reutilizados por cache entre execuções e também incluídos no artefato. A migração do cache mantém o histórico de notícias existente e passa a preservar também descoberta e catálogos. O cache pode ser removido pelo GitHub; nesse caso o acervo pode ser reconstruído, e itens antigos serão considerados novos. Execuções parciais mantêm seu código de saída e aparecem como falha no GitHub, mas as outras etapas, relatórios e estado são preservados e a próxima rodada continua programada. Consulte os erros em cada relatório; um fluxo que executou não significa que todas as fontes responderam.
 
 Este repositório é público, e o fluxo usa runners padrão. Não precisa de VPS nem de uma chave adicional de busca; aplicam-se as regras e disponibilidade do GitHub Actions. Em repositórios públicos, workflows agendados podem ser desativados após 60 dias sem atividade no repositório e precisar de reativação. O fluxo não altera as regras de acesso das redes: páginas privadas, exigências de login e desafios continuam fora do coletor.
 
 O modo local `--watch` usa cadência fixa de 10.800 segundos sem somar a duração da consulta ao intervalo e registra a próxima tentativa em `.monitor/state.sqlite3.schedule.json`. No GitHub, cada execução usa somente `--once`; o agendamento é feito pelo serviço Actions.
+
+## Descoberta mundial incremental
+
+`discovery_queries.json` contém **336 entradas de consulta**: doze idiomas, sete escopos e quatro provedores. Idiomas iniciais: português, inglês, espanhol, francês, italiano, alemão, polonês, russo, árabe, japonês, chinês e neerlandês. São uma seleção inicial; não representam todos os idiomas existentes.
+
+Os escopos incluem web aberta, redes principais, redes e fóruns, plataformas alternativas, blogs independentes, vídeos/arquivos públicos e outros locais de hospedagem indexados. Entre os alvos estão YouTube, Facebook, Instagram, TikTok, X/Twitter, Reddit, Telegram público, OK.ru, VK, Rutube, Rumble, Odysee, Vimeo, Dailymotion, Archive.org, BitChute e PeerTube. Há também consultas textuais aos índices de locais adultos solicitados pelo usuário; nenhum vídeo é baixado ou reproduzido pelo coletor.
+
+Os provedores são DuckDuckGo HTML, Bing HTML, Google News RSS e Bing News RSS. Os dois últimos têm cobertura de notícias e não substituem um índice completo da web. Suas URLs podem apontar ao agregador em vez do vídeo original. Todos os resultados preservam provedor e consulta de origem.
+
+```bash
+python3 discovery.py --once --max-queries 48 --max-seconds 1200 --spacing 4
+python3 catalogue.py --once --spacing 4
+```
+
+Cada rodada percorre até 48 entradas, com intervalo mínimo de quatro segundos entre pedidos ao mesmo host e até vinte minutos de orçamento para a descoberta. O cursor é salvo em `.monitor/discovery.sqlite3`, e a próxima execução continua a fila. Uma rotação da matriz tem sete lotes nominais; consultas puladas por bloqueio são identificadas como não executadas. Percorrer a fila não comprova que todos os alvos foram pesquisados com sucesso.
+
+Desafios, recusas ou limites suspendem o provedor afetado naquela rodada. Duas respostas HTML consecutivas sem formato ou relevância utilizáveis também pausam esse provedor. Outros índices seguem sendo consultados. Mais tempo não elimina esses impedimentos; os relatórios conservam as razões.
+
+Um resultado com vínculo ao nome e ao tema é marcado **indexado**; uma conexão parcial é marcada **pista**, para conferência humana. Em índices de notícias, uma pista temática pode ter associação ao nome apenas pelos termos da consulta; essa limitação fica explícita junto ao link. Ambos podem estar sem reprodução confirmada. Resultados alheios sem conexão suficiente são descartados. Links diferentes podem conter a mesma gravação e não são apresentados como filmagens inéditas.
+
+O catálogo separado acessa três páginas públicas conhecidas e extrai seus links e incorporações, mesmo quando os índices estão bloqueados. Mantém `.monitor/catalogues.sqlite3`. Descrições dos próprios publicadores são preservadas; conteúdos sobre reuniões, depoimentos ou outros assuntos permanecem identificados para conferência.
+
+O workflow tem limite total de 45 minutos. A continuidade é obtida por rodadas e estado persistente, não por uma requisição sem limite. A pesquisa não acessa contas privadas, não contorna CAPTCHA/login e não garante cobertura integral da internet.

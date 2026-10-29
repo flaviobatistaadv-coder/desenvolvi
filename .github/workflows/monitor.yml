@@ -11,6 +11,9 @@ on:
       - '.github/workflows/monitor.yml'
       - 'monitor.py'
       - 'public_search.py'
+      - 'discovery.py'
+      - 'discovery_queries.json'
+      - 'catalogue.py'
       - 'sources.json'
       - 'tests/**'
 
@@ -24,7 +27,7 @@ concurrency:
 jobs:
   pesquisar:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     steps:
       - name: Obter código
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -35,18 +38,31 @@ jobs:
           python-version: '3.12'
 
       - name: Testar coletores e cadência
+        id: checks
         run: python3 -m unittest discover -s tests -v
 
       - name: Restaurar histórico
         uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
-          path: .monitor/state.sqlite3
-          key: ${{ runner.os }}-arautos-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .monitor/state.sqlite3
+            .monitor/discovery.sqlite3
+            .monitor/catalogues.sqlite3
+          key: ${{ runner.os }}-arautos-state-v2-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
+            ${{ runner.os }}-arautos-state-v2-
             ${{ runner.os }}-arautos-state-v1-
 
-      - name: Pesquisar notícias e índices das redes
+      - name: Pesquisar notícias e publicações institucionais
         run: python3 monitor.py --once
+
+      - name: Descoberta mundial incremental com espaçamento
+        if: ${{ !cancelled() && steps.checks.outcome == 'success' }}
+        run: python3 discovery.py --once --max-queries 48 --max-seconds 1200 --spacing 4
+
+      - name: Extrair links de catálogos públicos
+        if: ${{ !cancelled() && steps.checks.outcome == 'success' }}
+        run: python3 catalogue.py --once --spacing 4
 
       - name: Registrar situação da coleta
         if: always()
@@ -54,25 +70,32 @@ jobs:
           python3 - <<'PY'
           import json, os
           from pathlib import Path
-          report = Path('.monitor/reports/latest.json')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as summary:
-              if not report.exists():
-                  summary.write('Não houve relatório nesta execução. Consulte o erro nos logs.\n')
-              else:
+              summary.write('# Monitor Arautos — resultado\n\n')
+              for filename, label in [('latest.json', 'Notícias'), ('discovery-latest.json', 'Descoberta mundial'), ('catalogue-latest.json', 'Catálogos públicos')]:
+                  report = Path('.monitor/reports') / filename
+                  summary.write(f'## {label}\n\n')
+                  if not report.exists():
+                      summary.write('Não houve relatório desta etapa. Consulte o erro nos logs.\n\n')
+                      continue
                   data = json.loads(report.read_text(encoding='utf-8'))
-                  summary.write('# Monitor Arautos — resultado\n\n')
-                  summary.write(f"Coleta: {data['collected_at_local']}\n\n")
+                  summary.write(f"Coleta: {data.get('collected_at_local', data['collected_at'])}\n\n")
                   summary.write(f"Estado: **{data['status']}**; novos: {data['new_count']}; histórico: {data['total_count']}.\n\n")
-                  summary.write('Baixe o artefato desta execução para consultar o painel, os links e os erros por fonte.\n\n')
-                  summary.write('Os textos são atribuídos às fontes; indexação não confirma reprodução ou autenticidade.\n')
+                  if 'matrix_size' in data:
+                      summary.write(f"Entradas percorridas: {data['queries_considered']}; requisições: {data['executed_queries']}; matriz: {data['matrix_size']}; próximo cursor: {data['cursor_next']}.\n\n")
+              summary.write('Baixe o artefato desta execução para consultar os links, pistas e erros por fonte.\n\n')
+              summary.write('Os textos são atribuídos às fontes; indexação ou extração de link não confirma reprodução ou autenticidade.\n')
           PY
 
       - name: Preservar histórico inclusive em coleta parcial
         if: ${{ always() && hashFiles('.monitor/state.sqlite3') != '' }}
         uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
-          path: .monitor/state.sqlite3
-          key: ${{ runner.os }}-arautos-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .monitor/state.sqlite3
+            .monitor/discovery.sqlite3
+            .monitor/catalogues.sqlite3
+          key: ${{ runner.os }}-arautos-state-v2-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Disponibilizar relatórios e cópia do histórico
         if: always()
@@ -82,6 +105,8 @@ jobs:
           path: |
             .monitor/reports/
             .monitor/state.sqlite3
+            .monitor/discovery.sqlite3
+            .monitor/catalogues.sqlite3
           include-hidden-files: true
           retention-days: 90
           if-no-files-found: warn

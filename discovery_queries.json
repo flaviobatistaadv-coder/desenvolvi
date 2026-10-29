@@ -1,0 +1,2395 @@
+{
+  "version": 2,
+  "description": "Matriz incremental de referências públicas. A tradução aplica-se ao termo de pesquisa; os nomes da organização permanecem em aliases conhecidos, sem inventar denominações oficiais. Não cobre todos os idiomas ou sites. Resultados são indexações/pistas, não reprodução ou autenticidade verificadas. Google News RSS e Bing News RSS cobrem índices de notícias, não pesquisa integral das redes ou blogs.",
+  "aliases": [
+    "Arautos",
+    "Arautos do Evangelho",
+    "João Clá Dias",
+    "Joao Cla Dias",
+    "João Clá",
+    "Joao Cla",
+    "João Scognamiglio",
+    "Joao Scognamiglio",
+    "Juan Clá",
+    "Heraldos del Evangelio",
+    "Heralds of the Gospel",
+    "Araldi del Vangelo",
+    "Hérauts de l’Évangile",
+    "Hérauts de l'Evangile",
+    "Herolde des Evangeliums",
+    "arautoleaks",
+    "heraldos.sv"
+  ],
+  "topic_terms": [
+    "exorc",
+    "esorc",
+    "exorz",
+    "egzor",
+    "экзорц",
+    "طرد الأرواح",
+    "الرقية",
+    "悪魔祓",
+    "エクソシズム",
+    "驱魔",
+    "驅魔",
+    "duiveluitdrijv",
+    "oração de libertação",
+    "oracion de liberacion",
+    "deliverance",
+    "délivrance"
+  ],
+  "queries": [
+    {
+      "id": "pt-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Português",
+      "scope": "Web aberta",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\")"
+    },
+    {
+      "id": "pt-web-bing",
+      "engine": "bing",
+      "language": "Português",
+      "scope": "Web aberta",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\")"
+    },
+    {
+      "id": "pt-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Português",
+      "scope": "Web aberta",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\")"
+    },
+    {
+      "id": "pt-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Português",
+      "scope": "Web aberta",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\")"
+    },
+    {
+      "id": "en-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Inglês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance)"
+    },
+    {
+      "id": "en-web-bing",
+      "engine": "bing",
+      "language": "Inglês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance)"
+    },
+    {
+      "id": "en-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Inglês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance)"
+    },
+    {
+      "id": "en-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Inglês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance)"
+    },
+    {
+      "id": "es-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Espanhol",
+      "scope": "Web aberta",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación)"
+    },
+    {
+      "id": "es-web-bing",
+      "engine": "bing",
+      "language": "Espanhol",
+      "scope": "Web aberta",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación)"
+    },
+    {
+      "id": "es-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Espanhol",
+      "scope": "Web aberta",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación)"
+    },
+    {
+      "id": "es-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Espanhol",
+      "scope": "Web aberta",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación)"
+    },
+    {
+      "id": "fr-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Francês",
+      "scope": "Web aberta",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance)"
+    },
+    {
+      "id": "fr-web-bing",
+      "engine": "bing",
+      "language": "Francês",
+      "scope": "Web aberta",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance)"
+    },
+    {
+      "id": "fr-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Francês",
+      "scope": "Web aberta",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance)"
+    },
+    {
+      "id": "fr-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Francês",
+      "scope": "Web aberta",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance)"
+    },
+    {
+      "id": "it-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Italiano",
+      "scope": "Web aberta",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi)"
+    },
+    {
+      "id": "it-web-bing",
+      "engine": "bing",
+      "language": "Italiano",
+      "scope": "Web aberta",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi)"
+    },
+    {
+      "id": "it-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Italiano",
+      "scope": "Web aberta",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi)"
+    },
+    {
+      "id": "it-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Italiano",
+      "scope": "Web aberta",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi)"
+    },
+    {
+      "id": "de-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Alemão",
+      "scope": "Web aberta",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen)"
+    },
+    {
+      "id": "de-web-bing",
+      "engine": "bing",
+      "language": "Alemão",
+      "scope": "Web aberta",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen)"
+    },
+    {
+      "id": "de-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Alemão",
+      "scope": "Web aberta",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen)"
+    },
+    {
+      "id": "de-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Alemão",
+      "scope": "Web aberta",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen)"
+    },
+    {
+      "id": "ru-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Russo",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание)"
+    },
+    {
+      "id": "ru-web-bing",
+      "engine": "bing",
+      "language": "Russo",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание)"
+    },
+    {
+      "id": "ru-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Russo",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание)"
+    },
+    {
+      "id": "ru-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Russo",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание)"
+    },
+    {
+      "id": "pl-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Polonês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy)"
+    },
+    {
+      "id": "pl-web-bing",
+      "engine": "bing",
+      "language": "Polonês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy)"
+    },
+    {
+      "id": "pl-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Polonês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy)"
+    },
+    {
+      "id": "pl-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Polonês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy)"
+    },
+    {
+      "id": "nl-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Neerlandês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving)"
+    },
+    {
+      "id": "nl-web-bing",
+      "engine": "bing",
+      "language": "Neerlandês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving)"
+    },
+    {
+      "id": "nl-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Neerlandês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving)"
+    },
+    {
+      "id": "nl-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Neerlandês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving)"
+    },
+    {
+      "id": "ar-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Árabe",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية)"
+    },
+    {
+      "id": "ar-web-bing",
+      "engine": "bing",
+      "language": "Árabe",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية)"
+    },
+    {
+      "id": "ar-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Árabe",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية)"
+    },
+    {
+      "id": "ar-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Árabe",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية)"
+    },
+    {
+      "id": "ja-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Japonês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム)"
+    },
+    {
+      "id": "ja-web-bing",
+      "engine": "bing",
+      "language": "Japonês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム)"
+    },
+    {
+      "id": "ja-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Japonês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム)"
+    },
+    {
+      "id": "ja-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Japonês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム)"
+    },
+    {
+      "id": "zh-web-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Chinês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔)"
+    },
+    {
+      "id": "zh-web-bing",
+      "engine": "bing",
+      "language": "Chinês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔)"
+    },
+    {
+      "id": "zh-web-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Chinês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔)"
+    },
+    {
+      "id": "zh-web-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Chinês",
+      "scope": "Web aberta",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔)"
+    },
+    {
+      "id": "en-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Inglês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "en-mainstream-bing",
+      "engine": "bing",
+      "language": "Inglês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "en-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Inglês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "en-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Inglês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "es-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Espanhol",
+      "scope": "Redes principais",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "es-mainstream-bing",
+      "engine": "bing",
+      "language": "Espanhol",
+      "scope": "Redes principais",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "es-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Espanhol",
+      "scope": "Redes principais",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "es-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Espanhol",
+      "scope": "Redes principais",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "fr-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Francês",
+      "scope": "Redes principais",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "fr-mainstream-bing",
+      "engine": "bing",
+      "language": "Francês",
+      "scope": "Redes principais",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "fr-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Francês",
+      "scope": "Redes principais",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "fr-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Francês",
+      "scope": "Redes principais",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "it-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Italiano",
+      "scope": "Redes principais",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "it-mainstream-bing",
+      "engine": "bing",
+      "language": "Italiano",
+      "scope": "Redes principais",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "it-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Italiano",
+      "scope": "Redes principais",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "it-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Italiano",
+      "scope": "Redes principais",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "de-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Alemão",
+      "scope": "Redes principais",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "de-mainstream-bing",
+      "engine": "bing",
+      "language": "Alemão",
+      "scope": "Redes principais",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "de-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Alemão",
+      "scope": "Redes principais",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "de-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Alemão",
+      "scope": "Redes principais",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ru-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Russo",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ru-mainstream-bing",
+      "engine": "bing",
+      "language": "Russo",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ru-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Russo",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ru-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Russo",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "pl-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Polonês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "pl-mainstream-bing",
+      "engine": "bing",
+      "language": "Polonês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "pl-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Polonês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "pl-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Polonês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "nl-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Neerlandês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "nl-mainstream-bing",
+      "engine": "bing",
+      "language": "Neerlandês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "nl-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Neerlandês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "nl-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Neerlandês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ar-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Árabe",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ar-mainstream-bing",
+      "engine": "bing",
+      "language": "Árabe",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ar-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Árabe",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ar-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Árabe",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ja-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Japonês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ja-mainstream-bing",
+      "engine": "bing",
+      "language": "Japonês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ja-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Japonês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "ja-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Japonês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "zh-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Chinês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "zh-mainstream-bing",
+      "engine": "bing",
+      "language": "Chinês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "zh-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Chinês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "zh-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Chinês",
+      "scope": "Redes principais",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "pt-mainstream-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Português",
+      "scope": "Redes principais",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "pt-mainstream-bing",
+      "engine": "bing",
+      "language": "Português",
+      "scope": "Redes principais",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "pt-mainstream-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Português",
+      "scope": "Redes principais",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "pt-mainstream-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Português",
+      "scope": "Redes principais",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:youtube.com OR site:facebook.com OR site:instagram.com OR site:tiktok.com)"
+    },
+    {
+      "id": "es-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Espanhol",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "es-forums-bing",
+      "engine": "bing",
+      "language": "Espanhol",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "es-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Espanhol",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "es-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Espanhol",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "fr-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Francês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "fr-forums-bing",
+      "engine": "bing",
+      "language": "Francês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "fr-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Francês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "fr-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Francês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "it-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Italiano",
+      "scope": "Redes e fóruns",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "it-forums-bing",
+      "engine": "bing",
+      "language": "Italiano",
+      "scope": "Redes e fóruns",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "it-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Italiano",
+      "scope": "Redes e fóruns",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "it-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Italiano",
+      "scope": "Redes e fóruns",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "de-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Alemão",
+      "scope": "Redes e fóruns",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "de-forums-bing",
+      "engine": "bing",
+      "language": "Alemão",
+      "scope": "Redes e fóruns",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "de-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Alemão",
+      "scope": "Redes e fóruns",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "de-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Alemão",
+      "scope": "Redes e fóruns",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ru-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Russo",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ru-forums-bing",
+      "engine": "bing",
+      "language": "Russo",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ru-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Russo",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ru-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Russo",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "pl-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Polonês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "pl-forums-bing",
+      "engine": "bing",
+      "language": "Polonês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "pl-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Polonês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "pl-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Polonês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "nl-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Neerlandês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "nl-forums-bing",
+      "engine": "bing",
+      "language": "Neerlandês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "nl-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Neerlandês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "nl-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Neerlandês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ar-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Árabe",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ar-forums-bing",
+      "engine": "bing",
+      "language": "Árabe",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ar-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Árabe",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ar-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Árabe",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ja-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Japonês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ja-forums-bing",
+      "engine": "bing",
+      "language": "Japonês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ja-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Japonês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "ja-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Japonês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "zh-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Chinês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "zh-forums-bing",
+      "engine": "bing",
+      "language": "Chinês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "zh-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Chinês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "zh-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Chinês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "pt-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Português",
+      "scope": "Redes e fóruns",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "pt-forums-bing",
+      "engine": "bing",
+      "language": "Português",
+      "scope": "Redes e fóruns",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "pt-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Português",
+      "scope": "Redes e fóruns",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "pt-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Português",
+      "scope": "Redes e fóruns",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "en-forums-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Inglês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "en-forums-bing",
+      "engine": "bing",
+      "language": "Inglês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "en-forums-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Inglês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "en-forums-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Inglês",
+      "scope": "Redes e fóruns",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:x.com OR site:twitter.com OR site:reddit.com OR site:t.me)"
+    },
+    {
+      "id": "fr-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Francês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "fr-alternative-bing",
+      "engine": "bing",
+      "language": "Francês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "fr-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Francês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "fr-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Francês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "it-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Italiano",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "it-alternative-bing",
+      "engine": "bing",
+      "language": "Italiano",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "it-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Italiano",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "it-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Italiano",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "de-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Alemão",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "de-alternative-bing",
+      "engine": "bing",
+      "language": "Alemão",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "de-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Alemão",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "de-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Alemão",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ru-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Russo",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ru-alternative-bing",
+      "engine": "bing",
+      "language": "Russo",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ru-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Russo",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ru-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Russo",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "pl-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Polonês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "pl-alternative-bing",
+      "engine": "bing",
+      "language": "Polonês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "pl-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Polonês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "pl-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Polonês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "nl-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Neerlandês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "nl-alternative-bing",
+      "engine": "bing",
+      "language": "Neerlandês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "nl-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Neerlandês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "nl-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Neerlandês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ar-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Árabe",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ar-alternative-bing",
+      "engine": "bing",
+      "language": "Árabe",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ar-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Árabe",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ar-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Árabe",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ja-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Japonês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ja-alternative-bing",
+      "engine": "bing",
+      "language": "Japonês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ja-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Japonês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "ja-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Japonês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "zh-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Chinês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "zh-alternative-bing",
+      "engine": "bing",
+      "language": "Chinês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "zh-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Chinês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "zh-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Chinês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "pt-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Português",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "pt-alternative-bing",
+      "engine": "bing",
+      "language": "Português",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "pt-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Português",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "pt-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Português",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "en-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Inglês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "en-alternative-bing",
+      "engine": "bing",
+      "language": "Inglês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "en-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Inglês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "en-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Inglês",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "es-alternative-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Espanhol",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "es-alternative-bing",
+      "engine": "bing",
+      "language": "Espanhol",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "es-alternative-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Espanhol",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "es-alternative-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Espanhol",
+      "scope": "Plataformas alternativas",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:ok.ru OR site:vk.com OR site:rutube.ru OR site:rumble.com OR site:odysee.com)"
+    },
+    {
+      "id": "it-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Italiano",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "it-blogs-bing",
+      "engine": "bing",
+      "language": "Italiano",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "it-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Italiano",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "it-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Italiano",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "de-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Alemão",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "de-blogs-bing",
+      "engine": "bing",
+      "language": "Alemão",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "de-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Alemão",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "de-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Alemão",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ru-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Russo",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ru-blogs-bing",
+      "engine": "bing",
+      "language": "Russo",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ru-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Russo",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ru-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Russo",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "pl-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Polonês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "pl-blogs-bing",
+      "engine": "bing",
+      "language": "Polonês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "pl-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Polonês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "pl-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Polonês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "nl-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Neerlandês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "nl-blogs-bing",
+      "engine": "bing",
+      "language": "Neerlandês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "nl-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Neerlandês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "nl-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Neerlandês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ar-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Árabe",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ar-blogs-bing",
+      "engine": "bing",
+      "language": "Árabe",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ar-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Árabe",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ar-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Árabe",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ja-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Japonês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ja-blogs-bing",
+      "engine": "bing",
+      "language": "Japonês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ja-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Japonês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "ja-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Japonês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "zh-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Chinês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "zh-blogs-bing",
+      "engine": "bing",
+      "language": "Chinês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "zh-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Chinês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "zh-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Chinês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "pt-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Português",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "pt-blogs-bing",
+      "engine": "bing",
+      "language": "Português",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "pt-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Português",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "pt-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Português",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "en-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Inglês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "en-blogs-bing",
+      "engine": "bing",
+      "language": "Inglês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "en-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Inglês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "en-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Inglês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "es-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Espanhol",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "es-blogs-bing",
+      "engine": "bing",
+      "language": "Espanhol",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "es-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Espanhol",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "es-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Espanhol",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "fr-blogs-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Francês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "fr-blogs-bing",
+      "engine": "bing",
+      "language": "Francês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "fr-blogs-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Francês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "fr-blogs-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Francês",
+      "scope": "Blogs e sites independentes",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:wordpress.com OR site:blogspot.com OR site:substack.com)"
+    },
+    {
+      "id": "de-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Alemão",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "de-archive-bing",
+      "engine": "bing",
+      "language": "Alemão",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "de-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Alemão",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "de-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Alemão",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ru-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Russo",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ru-archive-bing",
+      "engine": "bing",
+      "language": "Russo",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ru-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Russo",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ru-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Russo",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "pl-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Polonês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "pl-archive-bing",
+      "engine": "bing",
+      "language": "Polonês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "pl-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Polonês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "pl-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Polonês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "nl-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Neerlandês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "nl-archive-bing",
+      "engine": "bing",
+      "language": "Neerlandês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "nl-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Neerlandês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "nl-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Neerlandês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ar-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Árabe",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ar-archive-bing",
+      "engine": "bing",
+      "language": "Árabe",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ar-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Árabe",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ar-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Árabe",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ja-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Japonês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ja-archive-bing",
+      "engine": "bing",
+      "language": "Japonês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ja-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Japonês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ja-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Japonês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "zh-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Chinês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "zh-archive-bing",
+      "engine": "bing",
+      "language": "Chinês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "zh-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Chinês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "zh-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Chinês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "pt-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Português",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "pt-archive-bing",
+      "engine": "bing",
+      "language": "Português",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "pt-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Português",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "pt-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Português",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "en-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Inglês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "en-archive-bing",
+      "engine": "bing",
+      "language": "Inglês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "en-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Inglês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "en-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Inglês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "es-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Espanhol",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "es-archive-bing",
+      "engine": "bing",
+      "language": "Espanhol",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "es-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Espanhol",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "es-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Espanhol",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "fr-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Francês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "fr-archive-bing",
+      "engine": "bing",
+      "language": "Francês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "fr-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Francês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "fr-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Francês",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "it-archive-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Italiano",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "it-archive-bing",
+      "engine": "bing",
+      "language": "Italiano",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "it-archive-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Italiano",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "it-archive-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Italiano",
+      "scope": "Vídeos e arquivos públicos",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:vimeo.com OR site:dailymotion.com OR site:archive.org OR site:bitchute.com OR site:peertube.tv)"
+    },
+    {
+      "id": "ru-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Russo",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ru-other-hosting-bing",
+      "engine": "bing",
+      "language": "Russo",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ru-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Russo",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ru-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Russo",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (экзорцизм OR изгнание) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "pl-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Polonês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "pl-other-hosting-bing",
+      "engine": "bing",
+      "language": "Polonês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "pl-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Polonês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "pl-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Polonês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (egzorcyzm OR egzorcyzmy) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "nl-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Neerlandês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "nl-other-hosting-bing",
+      "engine": "bing",
+      "language": "Neerlandês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "nl-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Neerlandês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "nl-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Neerlandês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcisme OR duiveluitdrijving) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ar-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Árabe",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ar-other-hosting-bing",
+      "engine": "bing",
+      "language": "Árabe",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ar-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Árabe",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ar-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Árabe",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (\"طرد الأرواح\" OR الرقية) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ja-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Japonês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ja-other-hosting-bing",
+      "engine": "bing",
+      "language": "Japonês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ja-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Japonês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "ja-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Japonês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (悪魔祓い OR エクソシズム) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "zh-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Chinês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "zh-other-hosting-bing",
+      "engine": "bing",
+      "language": "Chinês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "zh-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Chinês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "zh-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Chinês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\" OR \"Arautos\") (驱魔 OR 驅魔) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "pt-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Português",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "pt-other-hosting-bing",
+      "engine": "bing",
+      "language": "Português",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "pt-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Português",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "pt-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Português",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Arautos do Evangelho\" OR \"João Clá Dias\") (exorcismo OR \"oração de libertação\") (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "en-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Inglês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "en-other-hosting-bing",
+      "engine": "bing",
+      "language": "Inglês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "en-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Inglês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "en-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Inglês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heralds of the Gospel\" OR \"Joao Cla Dias\") (exorcism OR deliverance) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "es-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Espanhol",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "es-other-hosting-bing",
+      "engine": "bing",
+      "language": "Espanhol",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "es-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Espanhol",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "es-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Espanhol",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Heraldos del Evangelio\" OR \"Joao Cla Dias\") (exorcismo OR liberación) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "fr-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Francês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "fr-other-hosting-bing",
+      "engine": "bing",
+      "language": "Francês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "fr-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Francês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "fr-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Francês",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Hérauts de l’Évangile\" OR \"Joao Cla Dias\") (exorcisme OR délivrance) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "it-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Italiano",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "it-other-hosting-bing",
+      "engine": "bing",
+      "language": "Italiano",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "it-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Italiano",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "it-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Italiano",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Araldi del Vangelo\" OR \"Joao Cla Dias\") (esorcismo OR esorcismi) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "de-other-hosting-duckduckgo",
+      "engine": "duckduckgo",
+      "language": "Alemão",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "de-other-hosting-bing",
+      "engine": "bing",
+      "language": "Alemão",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "de-other-hosting-google_news_rss",
+      "engine": "google_news_rss",
+      "language": "Alemão",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    },
+    {
+      "id": "de-other-hosting-bing_news_rss",
+      "engine": "bing_news_rss",
+      "language": "Alemão",
+      "scope": "Outros locais de hospedagem indexados",
+      "query": "(\"Herolde des Evangeliums\" OR \"Joao Cla Dias\") (Exorzismus OR Exorzismen) (site:xvideos.com OR site:xhamster.com OR site:pornhub.com)"
+    }
+  ]
+}
