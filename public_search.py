@@ -6,6 +6,7 @@ from html.parser import HTMLParser
 import re
 import unicodedata
 from urllib.parse import parse_qs, urlsplit, unquote
+import xml.etree.ElementTree as ET
 
 
 def fold(text):
@@ -119,13 +120,45 @@ def parse_search(data: bytes, source: dict) -> list[dict]:
         if any(term in visible for term in ["no results found", "nenhum resultado encontrado", "no results for", "nao ha resultados para", "no hay resultados para"]):
             return []
         raise ValueError("Buscador não forneceu resultados reconhecíveis; não presumir ausência de publicações")
+    return _matching_results(parser.results, source, " ".join(parser.visible))
+
+
+def parse_search_rss(data: bytes, source: dict) -> list[dict]:
+    """RSS público de busca, com a mesma validação de pertinência do HTML."""
+    if source.get("search_engine") != "bing":
+        raise ValueError("RSS de busca requer o buscador Bing")
+    try:
+        root = ET.fromstring(data)
+    except ET.ParseError as exc:
+        raise ValueError("A resposta não é um RSS de busca válido") from exc
+    channel = root.find("channel") if root.tag == "rss" else None
+    if channel is None or any(channel.find(tag) is None for tag in ("title", "link", "description")):
+        raise ValueError("A resposta não é um RSS de busca válido")
+
+    def text(value):
+        parser = SearchPage("bing")
+        parser.feed(value or "")
+        return " ".join(" ".join(parser.visible).split())
+
+    records = [
+        {"url": item.findtext("link", "").strip(),
+         "title": text(item.findtext("title", "")),
+         "snippet": text(item.findtext("description", ""))}
+        for item in channel.findall("item")
+    ]
+    if not records:
+        return []
+    return _matching_results(records, source, channel.findtext("title", ""))
+
+
+def _matching_results(records: list[dict], source: dict, context="") -> list[dict]:
     organization_terms = source.get("match_terms", [])
     topic_terms = source.get("topic_terms", ["exorc", "esorc"])
     if not organization_terms:
         raise ValueError("Busca social requer termos da organização")
     result, seen = [], set()
     platform_candidates = 0
-    for record in parser.results:
+    for record in records:
         url = platform_url(record["url"], source["platform"])
         if not url:
             continue
@@ -146,7 +179,7 @@ def parse_search(data: bytes, source: dict) -> list[dict]:
                        "source_id": source["id"], "kind": "rede social (resultado indexado)",
                        "categories": ["Comunicação e cultura"]})
     if not platform_candidates:
-        raise ValueError("O buscador retornou apenas URLs sem relação com a plataforma solicitada; amostra=" + repr([(record["title"][:100], unwrap(record["url"])[:180]) for record in parser.results[:2]]) + "; página=" + repr(" ".join(parser.visible)[:700]))
+        raise ValueError("O buscador retornou apenas URLs sem relação com a plataforma solicitada; amostra=" + repr([(record["title"][:100], unwrap(record["url"])[:180]) for record in records[:2]]) + "; resposta=" + repr(context[:700]))
     if not result:
         raise ValueError("O buscador retornou resultados sem correspondência conjunta à organização e ao tema")
     return result

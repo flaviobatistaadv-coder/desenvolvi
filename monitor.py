@@ -235,6 +235,9 @@ def fetch_source(source: dict) -> list[dict]:
         data = response.read(MAX_BYTES + 1)
     if len(data) > MAX_BYTES:
         raise ValueError("Feed excede o limite de 4 MiB")
+    if source.get("format") == "web_search_rss":
+        from public_search import parse_search_rss
+        return parse_search_rss(data, source)
     if source.get("format") == "web_search_html":
         from public_search import parse_search
         return parse_search(data, source)
