@@ -116,7 +116,7 @@ def parse_search(data: bytes, source: dict) -> list[dict]:
     if any(term in visible for term in challenge):
         raise ValueError("Busca bloqueada por desafio de acesso; não foi contornado")
     if not parser.results:
-        if any(term in visible for term in ["no results found", "nenhum resultado encontrado", "no results for"]):
+        if any(term in visible for term in ["no results found", "nenhum resultado encontrado", "no results for", "nao ha resultados para", "no hay resultados para"]):
             return []
         raise ValueError("Buscador não forneceu resultados reconhecíveis; não presumir ausência de publicações")
     organization_terms = source.get("match_terms", [])

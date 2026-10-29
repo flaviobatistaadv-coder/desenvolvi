@@ -116,6 +116,12 @@ class SearchResultTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             public_search.parse_search(fixture, source("bing"))
 
+    def test_bing_localized_no_results_is_a_completed_empty_search(self):
+        for message in ("Não há resultados para esta consulta", "No hay resultados para esta consulta", "There are no results for this query"):
+            with self.subTest(message=message):
+                fixture = page(f'<li class="b_no"><h1>{message}</h1></li>')
+                self.assertEqual(public_search.parse_search(fixture, source("bing")), [])
+
     def test_explicit_no_results_is_distinct_from_blocked_or_empty_interface(self):
         legitimate_empty = page('<div class="no-results">No results found for this query.</div>')
         self.assertEqual(public_search.parse_search(legitimate_empty, source()), [])

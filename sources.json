@@ -229,7 +229,7 @@
     {
       "id": "social-tiktok-pt",
       "name": "Busca pública tiktok — português",
-      "url": "https://www.bing.com/search?q=%22exorcismo%22+%22Arautos%22+site%3Atiktok.com",
+      "url": "https://www.bing.com/search?q=%22exorcismo%22+%22Arautos%22+site%3Atiktok.com&cc=br&setlang=pt-br",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "tiktok",
@@ -254,7 +254,7 @@
     {
       "id": "social-tiktok-es",
       "name": "Busca pública tiktok — espanhol",
-      "url": "https://www.bing.com/search?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+site%3Atiktok.com",
+      "url": "https://www.bing.com/search?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+site%3Atiktok.com&cc=es&setlang=es",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "tiktok",
@@ -279,7 +279,7 @@
     {
       "id": "social-tiktok-en",
       "name": "Busca pública tiktok — inglês",
-      "url": "https://www.bing.com/search?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+site%3Atiktok.com",
+      "url": "https://www.bing.com/search?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+site%3Atiktok.com&cc=us&setlang=en-us",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "tiktok",
@@ -304,7 +304,7 @@
     {
       "id": "social-x-pt",
       "name": "Busca pública x — português",
-      "url": "https://www.bing.com/search?q=%22exorcismo%22+%22Arautos%22+%28site%3Ax.com+OR+site%3Atwitter.com%29",
+      "url": "https://www.bing.com/search?q=%22exorcismo%22+%22Arautos%22+%28site%3Ax.com+OR+site%3Atwitter.com%29&cc=br&setlang=pt-br",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "x",
@@ -329,7 +329,7 @@
     {
       "id": "social-x-es",
       "name": "Busca pública x — espanhol",
-      "url": "https://www.bing.com/search?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+%28site%3Ax.com+OR+site%3Atwitter.com%29",
+      "url": "https://www.bing.com/search?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+%28site%3Ax.com+OR+site%3Atwitter.com%29&cc=es&setlang=es",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "x",
@@ -354,7 +354,7 @@
     {
       "id": "social-x-en",
       "name": "Busca pública x — inglês",
-      "url": "https://www.bing.com/search?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+%28site%3Ax.com+OR+site%3Atwitter.com%29",
+      "url": "https://www.bing.com/search?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+%28site%3Ax.com+OR+site%3Atwitter.com%29&cc=us&setlang=en-us",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "x",
@@ -379,7 +379,7 @@
     {
       "id": "social-vimeo-pt",
       "name": "Busca pública vimeo — português",
-      "url": "https://www.bing.com/search?q=%22exorcismo%22+%22Arautos%22+site%3Avimeo.com",
+      "url": "https://www.bing.com/search?q=%22exorcismo%22+%22Arautos%22+site%3Avimeo.com&cc=br&setlang=pt-br",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "vimeo",
@@ -404,7 +404,7 @@
     {
       "id": "social-vimeo-es",
       "name": "Busca pública vimeo — espanhol",
-      "url": "https://www.bing.com/search?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+site%3Avimeo.com",
+      "url": "https://www.bing.com/search?q=%22Heraldos+del+Evangelio%22+%22exorcismo%22+site%3Avimeo.com&cc=es&setlang=es",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "vimeo",
@@ -429,7 +429,7 @@
     {
       "id": "social-vimeo-en",
       "name": "Busca pública vimeo — inglês",
-      "url": "https://www.bing.com/search?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+site%3Avimeo.com",
+      "url": "https://www.bing.com/search?q=%22Heralds+of+the+Gospel%22+%22exorcism%22+site%3Avimeo.com&cc=us&setlang=en-us",
       "format": "web_search_html",
       "search_engine": "bing",
       "platform": "vimeo",
