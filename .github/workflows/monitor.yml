@@ -1,9 +1,6 @@
 name: Monitor Arautos a cada 3 horas
 
 on:
-  schedule:
-    # UTC: em São Paulo, 00:17, 03:17, 06:17, 09:17, 12:17, 15:17, 18:17 e 21:17.
-    - cron: '17 */3 * * *'
   workflow_dispatch:
   push:
     branches: [main]
